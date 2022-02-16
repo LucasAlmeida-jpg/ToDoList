@@ -36,10 +36,9 @@ header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
-  
 }
 
- h2 {
+h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -166,11 +165,29 @@ main {
   -webkit-text-fill-color: transparent;
 }
 
-.logo{
-background-image: linear-gradient(to bottom, rgb(255, 255, 255), var(--grey));
+.logo {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), var(--grey));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
 
-
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+  input {
+    width: 100%;
+  }
+  #new-task {
+    flex-direction: column;
+  }
+  #tasks {
+    height: 100%;
+    width: 100%;
+  }
+  #new-task-submit {
+    margin-top: 20px;
+  }
+}
